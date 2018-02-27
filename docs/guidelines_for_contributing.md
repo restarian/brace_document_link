@@ -1,9 +1,10 @@
 ## Making a difference with Brace document link
 
 ---
-### Document pages
+### Brace document link
 * [Contributer code of conduct](https://github.com/restarian/brace_document_link/blob/master/docs/contributer_code_of_conduct.md)
 * **Guidelines for contributing**
+* [License information](https://github.com/restarian/brace_document_link/blob/master/docs/license_information.md)
 * [Synopsis](https://github.com/restarian/brace_document_link/blob/master/docs/synopsis.md)
 * Specification
   * [Package specification](https://github.com/restarian/brace_document_link/blob/master/docs/specification/package_specification.md)

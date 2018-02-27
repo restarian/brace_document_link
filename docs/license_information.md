@@ -1,7 +1,13 @@
 ## License information
 
 ---
-### Document pages
+### Brace document link
+* [Contributer code of conduct](https://github.com/restarian/brace_document_link/blob/master/docs/contributer_code_of_conduct.md)
+* [Guidelines for contributing](https://github.com/restarian/brace_document_link/blob/master/docs/guidelines_for_contributing.md)
+* **License information**
+* [Synopsis](https://github.com/restarian/brace_document_link/blob/master/docs/synopsis.md)
+* Specification
+  * [Package specification](https://github.com/restarian/brace_document_link/blob/master/docs/specification/package_specification.md)
 
 ---
 
@@ -33,5 +39,5 @@ SOFTWARE.
 
   this file is a part of Brace document link
 
- Author: Robert Edward Steckroth II, BustOut, [<RobertSteckroth@gmail.com>](mailto:RobertSteckroth@gmail.com)
+ Author: Robert Steckroth, BustOut, [<RobertSteckroth@gmail.com>](mailto:RobertSteckroth@gmail.com)
 

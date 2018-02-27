@@ -1,9 +1,10 @@
 
 
 ---
-### Document pages
+### Brace document link
 * [Contributer code of conduct](https://github.com/restarian/brace_document_link/blob/master/docs/contributer_code_of_conduct.md)
 * [Guidelines for contributing](https://github.com/restarian/brace_document_link/blob/master/docs/guidelines_for_contributing.md)
+* [License information](https://github.com/restarian/brace_document_link/blob/master/docs/license_information.md)
 * [Synopsis](https://github.com/restarian/brace_document_link/blob/master/docs/synopsis.md)
 * Specification
   * **Package specification**
@@ -11,7 +12,7 @@
 ---
 ###  A plugin for Brace document which creates a link.
 
-**Version**: 0.0.2
+**Version**: 0.0.3
 
 **Author**: [Robert Steckroth](mailto:RobertSteckroth@gmail.com)
 

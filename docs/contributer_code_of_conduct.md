@@ -1,9 +1,10 @@
 # Contributor code of conduct
 
 ---
-### Document pages
+### Brace document link
 * **Contributer code of conduct**
 * [Guidelines for contributing](https://github.com/restarian/brace_document_link/blob/master/docs/guidelines_for_contributing.md)
+* [License information](https://github.com/restarian/brace_document_link/blob/master/docs/license_information.md)
 * [Synopsis](https://github.com/restarian/brace_document_link/blob/master/docs/synopsis.md)
 * Specification
   * [Package specification](https://github.com/restarian/brace_document_link/blob/master/docs/specification/package_specification.md)
