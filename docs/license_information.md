@@ -1,12 +1,14 @@
 ## License information
 
 ---
-### Brace document navlink
+### Document pages
 * [Contributer code of conduct](https://github.com/restarian/brace_document_link/blob/master/docs/contributer_code_of_conduct.md)
 * [Guidelines for contributing](https://github.com/restarian/brace_document_link/blob/master/docs/guidelines_for_contributing.md)
 * **License information**
-* [Package meta data](https://github.com/restarian/brace_document_link/blob/master/docs/package_meta_data.md)
 * [Synopsis](https://github.com/restarian/brace_document_link/blob/master/docs/synopsis.md)
+* Specification
+  * [Package specification](https://github.com/restarian/brace_document_link/blob/master/docs/specification/package_specification.md)
+  * [Unit test output](https://github.com/restarian/brace_document_link/blob/master/docs/specification/unit_test_output.md)
 
 ---
 

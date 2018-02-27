@@ -1,15 +1,17 @@
 
 
 ---
-### Brace document navlink
+### Document pages
 * [Contributer code of conduct](https://github.com/restarian/brace_document_link/blob/master/docs/contributer_code_of_conduct.md)
 * [Guidelines for contributing](https://github.com/restarian/brace_document_link/blob/master/docs/guidelines_for_contributing.md)
 * [License information](https://github.com/restarian/brace_document_link/blob/master/docs/license_information.md)
-* **Package meta data**
 * [Synopsis](https://github.com/restarian/brace_document_link/blob/master/docs/synopsis.md)
+* Specification
+  * **Package specification**
+  * [Unit test output](https://github.com/restarian/brace_document_link/blob/master/docs/specification/unit_test_output.md)
 
 ---
-###  A plugin for Brace document which creates a link.
+###  A plugin for Brace document which creates a hard link path relative to the project root.
 
 **Version**: 0.0.3
 
@@ -24,6 +26,7 @@
 | Name | Action |
 | ---- | ------ |
  | test | mocha |
+ | make_docs | brace_document -i docs_raw -b docs -e --link-dest README.md --link-path docs/synopsis.md --force-title --title 'Brace document navlink' --specification-path package_meta_data.md --sort alphanumeric |
 
 **Technologies used in development**:
   * [VIM](https://vim.org) As an IDE

@@ -32,7 +32,7 @@ var expect = require("chai").expect,
 	maybe = require("brace_maybe"),
 	utils = require("bracket_utils")
 
-var remove_cache = utils.remove_cache.bind(null, "r.js", "brace_document_link.js")
+var cache = utils.cacheManager(require)
 module.paths.unshift(path.join(__dirname, "..", ".."))
 var it_will = global
 
@@ -64,7 +64,7 @@ describe("using stop further progression methodology for dependencies in: "+path
 
 		var requirejs, parser
 		beforeEach(function(done) {
-			remove_cache()
+			cache.start()
 			requirejs = require("requirejs")
 			requirejs.config({baseUrl: path.join(__dirname, "..", "lib"), nodeRequire: require})
 			requirejs(["brace_document"], function(doc) { 
@@ -72,6 +72,7 @@ describe("using stop further progression methodology for dependencies in: "+path
 				done()
 			})
 		})
+		afterEach(cache.dump.bind(cache))
 
 		it("no option data is provided to it", function(done) {
 			requirejs(["./brace_document_link"], function(link) { 
