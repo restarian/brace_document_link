@@ -11,7 +11,7 @@
 ---
 ###  A plugin for Brace document which creates a link.
 
-**Version**: 0.0.1
+**Version**: 0.0.2
 
 **Author**: [Robert Steckroth](mailto:RobertSteckroth@gmail.com)
 

@@ -29,9 +29,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-  Brace document link is module which creates links after the documents pages are created.
+  Brace document link is a plugin for the Brace document platform which creates hard linked paths.
 
   this file is a part of Brace document link
 
- Author: Robert Steckroth, BustOut, [<RobertSteckroth@gmail.com>](mailto:RobertSteckroth@gmail.com)
+ Author: Robert Edward Steckroth II, BustOut, [<RobertSteckroth@gmail.com>](mailto:RobertSteckroth@gmail.com)
 
