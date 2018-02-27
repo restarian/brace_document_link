@@ -1,6 +1,6 @@
 {
 	"name": "brace_document_link",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"priority": "999",
 	"description": "A plugin for Brace document which creates a link.",
 	"main": "lib/brace_document_link.js",
