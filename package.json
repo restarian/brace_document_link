@@ -2,11 +2,12 @@
 	"name": "brace_document_link",
 	"version": "0.0.3",
 	"priority": "999",
-	"description": "A plugin for Brace document which creates a link.",
+	"description": "A plugin for Brace document which creates a hard link path relative to the project root.",
 	"main": "lib/brace_document_link.js",
 	"bin": {},
 	"scripts": {
-		"test": "mocha"
+		"test": "mocha",
+		"make_docs": "brace_document -i docs_raw -b docs -e --link-dest README.md --link-path docs/synopsis.md --force-title --title 'Brace document navlink' --specification-path package_meta_data.md --sort alphanumeric"
 	},
 	"repository": {
 		"type": "git",

@@ -1,13 +1,12 @@
 ## Making a difference with Brace document link
 
 ---
-### Brace document link
+### Brace document navlink
 * [Contributer code of conduct](https://github.com/restarian/brace_document_link/blob/master/docs/contributer_code_of_conduct.md)
 * **Guidelines for contributing**
 * [License information](https://github.com/restarian/brace_document_link/blob/master/docs/license_information.md)
+* [Package meta data](https://github.com/restarian/brace_document_link/blob/master/docs/package_meta_data.md)
 * [Synopsis](https://github.com/restarian/brace_document_link/blob/master/docs/synopsis.md)
-* Specification
-  * [Package specification](https://github.com/restarian/brace_document_link/blob/master/docs/specification/package_specification.md)
 
 ---
 
