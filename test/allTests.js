@@ -87,7 +87,7 @@ describe("using stop further progression methodology for dependencies in: "+path
 			}, function(error) { expect(false, error).to.be.true; done() })
 		})
 
-		it("when relative paths are passed in to it", function(done) {
+		it.skip("when relative paths are passed in to it", function(done) {
 			requirejs(["./brace_document_link"], function(link) { 
 
 				var l = link({linkDest: "docs", linkPath: "placeHolder"})
