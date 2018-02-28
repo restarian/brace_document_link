@@ -1,30 +1,28 @@
 /* Copyright (c) 2018 Robert Steckroth <RobertSteckroth@gmail.com>
 
-	Brace Document link resides under the MIT licensed.
+	 Brace document link resides under the MIT licensed.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
 
-  Brace Document Navlink is module to automatically add markdown page navigation links.
+   Brace document link is a plugin for the Brace document platform which creates hard linked paths.
 
-  this file is a part of Brace Document link  
-
- Author: Robert Steckroth, Bust0ut, <RobertSteckroth@gmail.com> */
+	this file is a part of Brace document link */
 
 var expect = require("chai").expect,
 	path = require("path"),
@@ -47,13 +45,6 @@ describe("using stop further progression methodology for dependencies in: "+path
 		it("requirejs in the system as a program", function(done) {
 			it_will.stop = true 
 			expect((function() {try { require("requirejs"); return true}catch(e) {return e}})(), "unable to find the requirejs module").to.be.true
-			it_will.stop = false 
-			done()
-		})
-
-		it("brace_document in the system as a program", function(done) {
-			it_will.stop = true 
-			expect((function() {try { require("brace_document"); return true}catch(e) {return e}})(), "unable to find the brace_document module").to.be.true
 			it_will.stop = false 
 			done()
 		})
@@ -88,16 +79,17 @@ describe("using stop further progression methodology for dependencies in: "+path
 			}, function(error) { expect(false, error).to.be.true; done() })
 		})
 
-		it.skip("when relative paths are passed in to it", function(done) {
+		it("when only one of the paths are passed in to it", function(done) {
 			requirejs(["./brace_document_link"], function(link) { 
 
-				var l = link({linkDest: "docs", linkPath: "placeHolder"})
+				var l = link({linkDest: "docs", linkPath: ""})
 				l.runThrough(null, null, () => {
+					expect(false).to.be.true;
 					done()
 				}, (msg) => {
-					expect(msg.toString()).to.include("The brace_document_link plugin did not receive a")
+					expect(msg.toString()).to.include("The brace_document_link plugin did not receive a linkPath option")
+					done()
 				})
-
 			}, function(error) { expect(false, error).to.be.true; done() })
 		})
 	})

@@ -7,7 +7,8 @@
 	"bin": {},
 	"scripts": {
 		"test": "mocha",
-		"make_docs": "brace_document -i docs_raw -b docs -e --link-dest README.md --link-path docs/synopsis.md --force-title --title 'Brace document navlink' --specification-path package_meta_data.md --sort alphanumeric"
+		"make_docs": "brace_document -i docs_raw -b docs -e --link-dest README.md --link-path docs/synopsis.md --force-title --title 'Brace document navlink pages' --sort depth",
+		"make_docs_extra": "npm run make_docs -- --specification --mocha"
 	},
 	"repository": {
 		"type": "git",
@@ -27,13 +28,15 @@
 		"bracket_print": "^0.9.12"
 	},
 	"devDependencies": {
-		"brace_document": "latest",
+		"brace_document": "1.x.x",
 		"brace_maybe": "^0.1.3",
 		"bracket_utils": "^0.3.0",
 		"chai": "^4.1.2",
 		"mocha": "^5.0.0"
 	},
-	"optionalDependencies": {},
+	"optionalDependencies": {
+		"brace_document": "1.x.x"
+	},
 	"technologies": [
 		{
 			"name": "VIM",
