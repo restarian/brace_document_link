@@ -1,6 +1,6 @@
 {
 	"name": "brace_document_link",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"priority": "999",
 	"description": "A plugin for Brace document which creates a hard link relative to the project root.",
 	"main": "lib/brace_document_link.js",
