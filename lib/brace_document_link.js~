@@ -50,9 +50,6 @@ define(["bracket_print"], function(print) {
 		cb = typeof cb === "function" && cb || function(){}
 		err_cb = typeof err_cb === "function" && err_cb || function(){}
 
-		// This plugin has no default option values.
-		this.option = {}
-
 		parser = parser || {}
 		// The option can be a commander instance or a object literal.
 		if ( typeof parser.option === "object" ) 
@@ -75,19 +72,20 @@ define(["bracket_print"], function(print) {
 				return err_cb(e_msg.log())
 
 			if ( this.option.dryRun )
-				return cb(0)
+				return cb()
 
 			// Have the directories created if necessary.
 			parser.addStructureDirectory(structure, path.dirname(this.option.linkDest))
 
-			fs.unlink(this.option.linkDest, function(error) {
+			fs.unlink(this.option.linkDest, (function(error) {
+
 				fs.link(path.join(parser.project_root, this.option.linkPath), path.join(parser.project_root, this.option.linkDest), function(error) {
 
 					if ( error ) 
 						err_cb(up_err.log("The link could not be created.", error))
-					cb(0)
+					cb()
 				})
-			})
+			}).bind(this))
 
 		}
 

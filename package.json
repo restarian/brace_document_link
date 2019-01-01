@@ -7,7 +7,7 @@
 	"bin": {},
 	"scripts": {
 		"test": "mocha",
-		"make_docs": "brace_document -i docs --link-dest README.md --link-path docs/synopsis.md --force-title --title \"Brace document link pages\" --sort depth",
+		"make_docs": "brace_document -i docs -r --navlink --link-dest README.md --link-path docs/synopsis.md --force-title --title \"Brace document link pages\" --sort depth",
 		"make_docs_extra": "npm run make_docs -- --specification --mocha"
 	},
 	"repository": {
@@ -29,13 +29,14 @@
 		"brace_maybe": "^0.1.3",
 		"bracket_utils": "^0.3.0",
 		"chai": "^4.1.2",
-		"mocha": "^5.0.0"
+		"mocha": "^5.0.0",
+		"brace_document": "^1.0.0"
 	},
 	"optionalDependencies": {
-		"@restarian/batten_document_mocha": "0.0.5",
-		"@restarian/batten_document_specification": "0.0.5",
-		"brace_document": "^1.0.1",
-		"brace_document_navlink": "^1.0.2"
+		"@restarian/batten_document_mocha": "^0.1.0",
+		"@restarian/batten_document_specification": "^0.1.0",
+		"brace_document_navlink": "^1.0.0",
+		"brace_document_link": "^0.1.0"
 	},
 	"technologies": [
 		{
