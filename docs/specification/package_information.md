@@ -1,6 +1,16 @@
+
+---
+### Brace Document Link pages
+* [Synopsis](https://github.com/restarian/brace_document_link/blob/master/docs/synopsis.md)
+* Specification
+  * [License information](https://github.com/restarian/brace_document_link/blob/master/docs/specification/license_information.md)
+  * [Package information](https://github.com/restarian/brace_document_link/blob/master/docs/specification/package_information.md)
+  * **Package information**
+  * [Unit test output](https://github.com/restarian/brace_document_link/blob/master/docs/specification/unit_test_output.md)
+  * [Unit test output](https://github.com/restarian/brace_document_link/blob/master/docs/specification/unit_test_output.md)
  
  
-**Version**: 0.0.4
+**Version**: 0.1.1
 
 **Description**: A plugin for Brace document which creates a hard link relative to the project root.
 
@@ -8,17 +18,17 @@
 
 **Dependencies**: [amdefine](https://npmjs.org/package/amdefine) [bracket_print](https://npmjs.org/package/bracket_print)
 
-**Development dependencies**: [requirejs](https://npmjs.org/package/requirejs) [brace_maybe](https://npmjs.org/package/brace_maybe) [bracket_utils](https://npmjs.org/package/bracket_utils) [chai](https://npmjs.org/package/chai) [mocha](https://npmjs.org/package/mocha)
+**Development dependencies**: [requirejs](https://npmjs.org/package/requirejs) [brace_maybe](https://npmjs.org/package/brace_maybe) [bracket_utils](https://npmjs.org/package/bracket_utils) [chai](https://npmjs.org/package/chai) [mocha](https://npmjs.org/package/mocha) [brace_document](https://npmjs.org/package/brace_document)
 
-**Optional Dependencies**: [@restarian/batten_document_mocha](https://npmjs.org/package/@restarian/batten_document_mocha) [@restarian/batten_document_specification](https://npmjs.org/package/@restarian/batten_document_specification) [brace_document](https://npmjs.org/package/brace_document) [brace_document_navlink](https://npmjs.org/package/brace_document_navlink)
+**Optional Dependencies**: [batten_document_specification](https://npmjs.org/package/batten_document_specification) [batten_document_mocha](https://npmjs.org/package/batten_document_mocha) [brace_document_navlink](https://npmjs.org/package/brace_document_navlink) [brace_document_link](https://npmjs.org/package/brace_document_link)
 
 **Package scripts**:
 
 | Name | Action |
 | ---- | ------ |
  | test | ```mocha``` |
- | make_docs | ```brace_document -i docs --link-dest README.md --link-path docs/synopsis.md --force-title --title "Brace document link pages" --sort depth``` |
- | make_docs_extra | ```npm run make_docs -- --specification --mocha``` |
+ | make_docs | ```brace_document --link --link-dest README.md --link-path docs/synopsis.md --navlink -i docs -r --force-title --title "Brace Document Link pages" --sort depth``` |
+ | make_docs_extra | ```npm run make_docs --silent -- --specification --mocha``` |
 
 **Technologies used in development**:
   * [VIM](https://vim.org) As an IDE
