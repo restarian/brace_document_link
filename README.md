@@ -11,7 +11,7 @@
 [Brace logo]: https://raw.githubusercontent.com/restarian/restarian/master/brace/doc/image/brace_logo_small.png
 
 ---
-### Brace Document Link pages
+### Brace Document Link help pages
 * **Synopsis**
 * Specification
   * [License information](https://github.com/restarian/brace_document_link/blob/master/docs/specification/license_information.md)
