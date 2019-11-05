@@ -4,18 +4,18 @@
 ----
 
 ### Brace Document Link help pages
+* [Contributor code of conduct](https://github.com/restarian/brace_document_link/blob/master/docs/contributor_code_of_conduct.md)
+* [Guidelines for contributing](https://github.com/restarian/brace_document_link/blob/master/docs/guidelines_for_contributing.md)
 * [Synopsis](https://github.com/restarian/brace_document_link/blob/master/docs/synopsis.md)
 * Specification
   * [License information](https://github.com/restarian/brace_document_link/blob/master/docs/specification/license_information.md)
-  * [Package information](https://github.com/restarian/brace_document_link/blob/master/docs/specification/package_information.md)
   * **Package information**
-  * [Unit test output](https://github.com/restarian/brace_document_link/blob/master/docs/specification/unit_test_output.md)
   * [Unit test output](https://github.com/restarian/brace_document_link/blob/master/docs/specification/unit_test_output.md)
 ----
 
-**Version**: 1.1.2
+**Version**: 1.1.3
 
-**Description**: A plugin for Brace document which creates a hard link relative to the project root.
+**Description**: A plugin for Brace Document which creates a hard link relative to the project root.
 
 **Author**: [Robert Steckroth](mailto:RobertSteckroth@gmail.com)
 
@@ -28,7 +28,7 @@
 | Name | Action |
 | ---- | ------ |
  | test | ```mocha``` |
- | make_docs | ```brace_document --link --link-dest README.md --link-path docs/synopsis.md --navlink -i docs -r --force-title --title "Brace Document Link help pages" --sort depth``` |
+ | make_docs | ```brace_document --link --link-dest ../Readme.md --link-path synopsis.md --navlink -i docs -r --force-title --title "Brace Document Link help pages" --sort depth``` |
  | make_docs_extra | ```npm run make_docs --silent -- --specification --mocha``` |
 
 **Technologies used in development**:
@@ -38,6 +38,4 @@
   * [Git](https://git-scm.com) For repository management
   * [Github](https://github.com) For repository storage
   * [NPM](https://npmjs.org) For module storage
-  * [Blender](https://blender.org) For logo design and art renderingGit](https://git-scm.com) For repository management
-  * [Github](https://github.com) For repository storage
-  * [NPM](https://npmjs.org) For module storage
+  * [Blender](https://blender.org) For logo design and art rendering

@@ -2,18 +2,18 @@
 ## Restarian Technology
 
 ----
-----
-
 #### Brace Document Link help pages
+* [Contributor code of conduct](https://github.com/restarian/brace_document_link/blob/master/docs/contributor_code_of_conduct.md)
+* [Guidelines for contributing](https://github.com/restarian/brace_document_link/blob/master/docs/guidelines_for_contributing.md)
 * [Synopsis](https://github.com/restarian/brace_document_link/blob/master/docs/synopsis.md)
 * Specification
   * **License information**
   * [Package information](https://github.com/restarian/brace_document_link/blob/master/docs/specification/package_information.md)
-  * [Package information](https://github.com/restarian/brace_document_link/blob/master/docs/specification/package_information.md)
-  * [Unit test output](https://github.com/restarian/brace_document_link/blob/master/docs/specification/unit_test_output.md)
   * [Unit test output](https://github.com/restarian/brace_document_link/blob/master/docs/specification/unit_test_output.md)
 
-All works, media and writings contained within this project are licensed the same as Brace document license unless it is explicitly specified otherwise.
+----
+
+#### All works, media and writings contained within this project have the same licensed as Brace Document Link license unless it is explicitly specified otherwise.
 
 #### The Brace Suite is a collection of javascript centric libraries aimed at application development.
 
@@ -23,11 +23,6 @@ ___
 
 **Author**: Robert Steckroth, *Bust0ut* [<RobertSteckroth@gmail.com>](mailto:robertsteckroth@gmail.com)
 
-**Bonuses:**
-* Open-sourced under a liberal licensed
-
-**Caveats:**
-  * Does not come with tailored support
 
 ![Brace](https://raw.githubusercontent.com/restarian/restarian/master/brace/doc/image/brace_logo_medium.png)
 

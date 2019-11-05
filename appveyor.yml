@@ -1,0 +1,41 @@
+version: 1.0.{build}
+
+image:
+   - Visual Studio 2015
+   - Ubuntu
+
+
+clone_depth: 1
+
+notifications:
+- provider: Email
+  to:
+  - robertsteckroth@gmail.com
+  subject: A Brace Document Link build has failed.
+  on_build_success: false
+  on_build_failure: true
+  on_build_status_changed: false
+
+
+environment:
+  matrix:
+    - nodejs_version: 6
+    - nodejs_version: 9
+    - nodejs_version: 10
+    - nodejs_version: 11
+    - nodejs_version: 12
+
+install:
+  - npm install
+
+init:
+  - npm install brace_document
+  
+build: off
+
+test_script:
+  - node --version && npm --version
+  - npm test
+
+matrix:
+  fast_finish: false
