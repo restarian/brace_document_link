@@ -13,7 +13,7 @@
   * [Unit test output](https://github.com/restarian/brace_document_link/blob/master/docs/specification/unit_test_output.md)
 ----
 
-**Version**: 1.1.3
+**Version**: 1.1.4
 
 **Description**: A plugin for Brace Document which creates a hard link relative to the project root.
 

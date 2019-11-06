@@ -28,14 +28,16 @@
 
       * √ when only one of the paths are passed in to it
 
-      * √ when two valid links paths are supplied the poper link is created
+      * √ when two valid links paths are supplied the proper link is created using a backup directory
+
+      * √ when two valid links paths are supplied the proper link is created
 
       * √ when absolute paths are used
 
       * √ when a link is attempted to be created in a non-existant directory location
 
 
-  * 7 passing
+  * 8 passing
 
 
 ### ---------- End of unit testing ----------

@@ -65,7 +65,7 @@ describe("using stop further progression methodology for dependencies in: "+path
 			cache.start()
 			opt = { 
 				pluginPath: path.join(__dirname, "..", ".."), 
-				"link": null,
+				link: null,
 				pluginRegex: "^brace_document_link$", 
 				input: path.join("test", "example") 
 			}
@@ -102,7 +102,32 @@ describe("using stop further progression methodology for dependencies in: "+path
 				})
 			}, err_cb)
 		})
-		it("when two valid links paths are supplied the poper link is created", function(done) {
+		it("when two valid links paths are supplied the proper link is created using a backup directory", function(done) {
+			requirejs(["brace_document"], function(document_parse) { 
+
+				fs.unlink("test/example/docs_another/the_link.md", function(error) {
+					fs.stat("test/example/docs_another/the_link.md", function(err) {
+
+						expect(err, "Unable to remove link before test was administered.").to.not.be.null
+
+						opt.linkPath = "first_page.md"
+						opt.linkDest = "docs_another/the_link.md"
+						opt.backup = path.join(opt.input, "docs_another")
+						parser = document_parse(opt, function() {
+							fs.stat("test/example/docs_another/the_link.md", function(err) {
+								expect(err, "A link was not created.").to.be.null
+								done()
+							})
+						}, function(error) {
+							expect(false, error.toString()).to.be.true
+							done()
+						})
+					})
+				})
+
+			}, err_cb)
+		})
+		it("when two valid links paths are supplied the proper link is created", function(done) {
 			requirejs(["brace_document"], function(document_parse) { 
 				fs.unlink("test/example/another.md", function(error) {
 					fs.stat("test/example/another.md", function(err) {
@@ -114,7 +139,7 @@ describe("using stop further progression methodology for dependencies in: "+path
 						parser = document_parse(opt, function() {
 							fs.stat("test/example/another.md", function(err) {
 
-								expect(err, "The link was not created").to.be.null
+								expect(err, "The link was not created.").to.be.null
 								done()
 							})
 						}, function(error) {

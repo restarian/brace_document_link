@@ -4,7 +4,6 @@ image:
    - Visual Studio 2015
    - Ubuntu
 
-
 clone_depth: 1
 
 notifications:
@@ -30,7 +29,7 @@ install:
 
 init:
   - npm install brace_document
-  
+
 build: off
 
 test_script:
