@@ -26,8 +26,6 @@ environment:
 
 install:
   - npm install
-
-init:
   - npm install brace_document
 
 build: off
