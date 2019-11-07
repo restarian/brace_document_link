@@ -32,6 +32,7 @@ environment:
       appveyor_build_worker_image: Ubuntu
 install:
   - npm install
+  - npm install brace_document
 build: off
 test_script:
   - node --version && npm --version
