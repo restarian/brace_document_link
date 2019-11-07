@@ -4,7 +4,7 @@ notifications:
 - provider: Email
   to:
   - robertsteckroth@gmail.com
-  subject: A Brace Document Link build has failed.
+  subject: A Brace Document Navlink build has failed.
   on_build_success: false
   on_build_failure: true
   on_build_status_changed: false
@@ -44,9 +44,9 @@ for:
   matrix:
     only:
       - appveyor_build_worker_image: Ubuntu
-  clone_folder: /home/appveyor/brace_document_link
+  clone_folder: /home/appveyor/brace_document_navlink
 -
   matrix:
     only:
       - appveyor_build_worker_image: Visual Studio 2015
-  clone_folder: C:\projects\brace_document_link
+  clone_folder: C:\projects\brace_document_navlink

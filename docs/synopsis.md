@@ -1,7 +1,7 @@
 # Brace Document Link
 ## Synopsis
 
-[![Build status](https://ci.appveyor.com/api/projects/status/316uk12umdp68sd2?svg=true)](https://ci.appveyor.com/project/restarian/brace-document-link) [![Downloads](https://img.shields.io/npm/dm/brace_document.svg?svg=true)](https://npmjs.org/package/brace_document)
+[![Build status](https://ci.appveyor.com/api/projects/status/316uk12umdp68sd2?svg=true)](https://ci.appveyor.com/project/restarian/brace-document-link) [![Downloads](https://img.shields.io/npm/dm/brace_document_link.svg?svg=true)](https://npmjs.org/package/brace_document_link)
 
 | **The [Brace Suite]** | **[Ubuntu on Windows]**   |
 |:---------------------:|:-------------------------:|
@@ -26,7 +26,7 @@
 
 ### Bonuses:
   * Cross-platform design enables using win32 or unix syntax.
-  * Many unit tests which also run remotely on Linux and Windows.
+  * Unit testing which run remotely on Linux and Windows.
   * Open-sourced under a liberal licensed (MIT)
 
 ### What is it
