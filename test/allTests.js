@@ -124,7 +124,6 @@ describe("using stop further progression methodology for dependencies in: "+path
 						})
 					})
 				})
-
 			}, err_cb)
 		})
 		it("when two valid links paths are supplied the proper link is created", function(done) {

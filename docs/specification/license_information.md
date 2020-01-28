@@ -1,5 +1,5 @@
-# Brace Suite
-## Restarian Technology
+# Brace Document Link
+## License information by Restarian Technology
 
 ----
 #### Brace Document Link help pages
@@ -13,7 +13,9 @@
 
 ----
 
-#### All works, media and writings contained within this project have the same licensed as Brace Document Link license unless it is explicitly specified otherwise.
+#### Brace Document Link is included in the Brace Suite.
+
+All works, media and writings contained within this project are licensed the same as Brace document license unless it is explicitly specified otherwise.
 
 #### The Brace Suite is a collection of javascript centric libraries aimed at application development.
 
