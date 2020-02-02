@@ -15,29 +15,17 @@
 ### ---------- Start of unit testing ----------
 
   * using stop further progression methodology for dependencies in: allTests.js
-
     * checking for dependencies..
-
-      * √ requirejs in the system as a program
-
       * √ the brace_document module is install on the system
-
     * the script functions appropriately when
-
       * √ no option data is provided to it
-
       * √ when only one of the paths are passed in to it
-
       * √ when two valid links paths are supplied the proper link is created using a backup directory
-
       * √ when two valid links paths are supplied the proper link is created
-
       * √ when absolute paths are used
-
       * √ when a link is attempted to be created in a non-existant directory location
 
-
-  * 8 passing
+  * 7 passing
 
 
 ### ---------- End of unit testing ----------

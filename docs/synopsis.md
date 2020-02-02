@@ -12,6 +12,7 @@
 
 [Ubuntu on Windows logo]: https://raw.githubusercontent.com/restarian/restarian/master/doc/image/ubuntu_windows_logo.png
 [Brace logo]: https://raw.githubusercontent.com/restarian/restarian/master/brace/doc/image/brace_logo_small.png
+
 ---
 ### Brace Document Link help pages
 * [Contributor code of conduct](https://github.com/restarian/brace_document_link/blob/master/docs/contributor_code_of_conduct.md)
@@ -29,8 +30,8 @@
   * Unit testing which run remotely on Linux and Windows.
   * Open-sourced under a liberal licensed (MIT)
 
-### What is it
-##### A simple plugin for [Brace Document](https://npmjs.org/packages/brace_document) which creates a hard link to another location.
+### What it is:
+#### A simple plugin for [Brace Document](https://npmjs.org/packages/brace_document) which creates a hard link to another location.
 
-#### How to use the plugin
-##### The current and destination paths are relative to the input (or backup) path used. The plugin tense is set to run after all the other plugins and data is written out so that links can be made from documentation points.
+### How to use the plugin:
+#### The current and destination paths are relative to the input path used. The plugin tense (or priority), is set to run after all the other plugins and data are written out so that links can be made from the end-result documentation. This is usefull with platforms like Github.com which require document pages (like the Readme) to be in the base directory of a project.

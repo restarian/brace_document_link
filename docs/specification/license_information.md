@@ -21,7 +21,7 @@ All works, media and writings contained within this project are licensed the sam
 
 A project which is labeled with the Brace Suite is open-sourced under the **MIT** license. However, the license for the Brace Suite may not pertain to all content used within a Brace Suite project. Any (*and all*), content which is not explicitly licensed shall be used under the *Brace Suite* license. Please make sure to verify all content licensing before using the works within the *Brace Suite*.  
 
-___
+----
 
 **Author**: Robert Steckroth, *Bust0ut* [<RobertSteckroth@gmail.com>](mailto:robertsteckroth@gmail.com)
 
